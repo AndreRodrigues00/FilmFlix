@@ -1,0 +1,33 @@
+<!-- {% extends 'base.html'  %} -->
+
+<!-- {% block content %} -->
+<!-- <h1>This is FilmFlix -->
+    <!-- Browse and see the Films which we have available -->
+    
+<!-- </h1> -->
+
+<!-- {% endblock content %} -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilmFlix home</title>
+</head>
+
+<body>
+    <section>
+        <div class="film-list-container">
+            {% for film in data %}
+        </div class="film-card">
+        <img src="https://image.tmdb.org/t/p/w500/{{movie.poster_path}}" alt="">
+        
+        <h2>{{movie.title}}</h2>
+    </div>
+    {% endfor %}
+        
+    </section>
+    
+</body>
+</html>
